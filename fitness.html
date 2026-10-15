@@ -1,0 +1,1160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitzone — Website Design Showcase</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="fitness">
+
+<style>
+:root {
+  --paper: #faf8f1;
+  --ink: #080909;
+  --muted: #3c4c5e;
+  --lime: #d7ff35;
+  --line: #a9a9a1;
+  --mono: "DM Mono", monospace;
+  --display: "Anton", Impact, sans-serif;
+  --sans: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 26px 28px 34px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+/* HEADER */
+
+.top {
+  display: grid;
+  grid-template-columns: 72px minmax(310px, auto) 1px minmax(250px, 390px) 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 0 8px 25px;
+}
+
+.edition {
+  font: 16px var(--mono);
+}
+
+h1 {
+  margin: 0;
+  font: clamp(42px, 5.5vw, 82px)/.98 var(--display);
+  letter-spacing: -1.6px;
+  white-space: nowrap;
+}
+
+.top-rule {
+  height: 72px;
+  background: #111;
+}
+
+.intro {
+  max-width: 390px;
+  color: var(--muted);
+  font: 14px/1.7 var(--mono);
+}
+
+.eyebrow {
+  justify-self: end;
+  color: #34465a;
+  font: 14px var(--mono);
+  white-space: nowrap;
+}
+
+/* SHOWCASE GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.showcase-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 16px;
+  min-width: 0;
+  min-height: 445px;
+  padding: 19px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font: 13px var(--mono);
+  white-space: nowrap;
+}
+
+.number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  background: var(--lime);
+  font: 500 14px var(--mono);
+}
+
+.short-line {
+  width: 27px;
+  height: 1px;
+  margin: 28px 0 23px;
+  background: #737a7e;
+}
+
+.description {
+  max-width: 145px;
+  margin: 0;
+  color: var(--muted);
+  font: 13px/1.7 var(--mono);
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--ink);
+  font: 14px var(--mono);
+  text-decoration: none;
+}
+
+.view svg {
+  transition: transform .2s;
+}
+
+.view:hover svg {
+  transform: translateX(5px);
+}
+
+/* BROWSER MOCKUP */
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-width: 0;
+  overflow: hidden;
+  border: 3px solid #080909;
+  border-radius: 10px;
+  background: #fffdf6;
+  box-shadow: 0 1px 0 #000;
+}
+
+.browser-bar {
+  display: flex;
+  flex: 0 0 18px;
+  align-items: center;
+  gap: 5px;
+  height: 18px;
+  padding: 0 8px;
+  background: #070808;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+
+.dot:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.dot:nth-child(3) {
+  background: #28c840;
+}
+
+.site {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 10px 12px 12px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 17px;
+  font-size: 7px;
+}
+
+.brand {
+  font: 18px var(--display);
+  letter-spacing: -.3px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+.navlinks a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navlinks a:hover {
+  color: #8db900;
+}
+
+.join {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: var(--lime);
+  font-size: 7px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #080909;
+}
+
+.lime {
+  color: #8db900;
+}
+
+/* HERO PAGE */
+
+.hero-site {
+  position: relative;
+  isolation: isolate;
+  min-height: 0;
+  color: white;
+  background: #080a09;
+}
+
+.hero-site::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.94),
+      rgba(0,0,0,.72) 44%,
+      rgba(0,0,0,.08)
+    ),
+    url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+}
+
+.hero-site .site-nav {
+  margin-bottom: 20px;
+}
+
+.hero-copy {
+  width: 68%;
+  margin: auto 0;
+}
+
+.kicker {
+  margin-bottom: 8px;
+  color: var(--lime);
+  font: 9px var(--mono);
+}
+
+.hero-copy h2,
+.program-head h2,
+.trainer-head h2,
+.contact-copy h2 {
+  margin: 0 0 11px;
+  font: clamp(23px, 2.3vw, 38px)/.98 var(--display);
+  letter-spacing: -.3px;
+  text-transform: uppercase;
+}
+
+.hero-copy h2 span,
+.program-head h2 span,
+.trainer-head h2 span,
+.contact-copy h2 span {
+  color: var(--lime);
+}
+
+.hero-copy p {
+  max-width: 260px;
+  color: #e6e6e6;
+  font: 8px/1.55 var(--mono);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 7px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: var(--lime);
+  color: #080808;
+  font: 8px var(--mono);
+  text-decoration: none;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 16px;
+  font: 7px var(--mono);
+}
+
+.hero-stats strong {
+  display: block;
+  margin-bottom: 2px;
+  font: 16px var(--display);
+}
+
+.hero-stats span {
+  display: block;
+  color: #c9c9c9;
+}
+
+/* PROGRAMS PAGE */
+
+.program-head {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.program-head h2,
+.trainer-head h2,
+.contact-copy h2 {
+  font-size: clamp(24px, 2.4vw, 36px);
+}
+
+.program-head p {
+  margin: 0 0 3px;
+  color: #425063;
+  font: 8px/1.5 var(--mono);
+}
+
+.programs {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7d5cd;
+  border-radius: 8px;
+}
+
+.program img {
+  width: 100%;
+  height: 94px;
+  object-fit: cover;
+}
+
+.program-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.program-icon {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.program h3 {
+  margin: 0 0 6px;
+  font: 12px/.98 var(--display);
+}
+
+.program p {
+  margin: 0 0 8px;
+  color: #4e5860;
+  font: 7px/1.45 var(--mono);
+}
+
+.learn {
+  margin-top: auto;
+  font: 7px var(--mono);
+  white-space: nowrap;
+}
+
+/* TRAINERS PAGE */
+
+.trainer-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.filter {
+  padding: 7px 10px;
+  border: 1px solid #d4d3ca;
+  border-radius: 20px;
+  font-size: 7px;
+  white-space: nowrap;
+}
+
+.filter.active {
+  border-color: var(--lime);
+  background: var(--lime);
+}
+
+.trainers {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.trainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7d5cd;
+  border-radius: 8px;
+}
+
+.trainer img {
+  width: 100%;
+  height: clamp(100px, 11vw, 155px);
+  object-fit: cover;
+}
+
+.trainer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.trainer-meta strong {
+  font: 11px var(--display);
+}
+
+.trainer-meta span {
+  color: #53606a;
+  font: 7px var(--mono);
+}
+
+/* CONTACT PAGE */
+
+.contact-layout {
+  display: grid;
+  flex: 1;
+  grid-template-columns: .9fr 1fr;
+  gap: 16px;
+}
+
+.contact-copy p {
+  color: #4b5660;
+  font: 8px/1.55 var(--mono);
+}
+
+.contact-details {
+  margin-top: 15px;
+  font: 8px/1.8 var(--mono);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field {
+  min-width: 0;
+  padding: 11px 10px;
+  border: 1px solid #e0ded5;
+  border-radius: 8px;
+  background: transparent;
+  color: #34404a;
+  font: 8px var(--mono);
+}
+
+.field.message {
+  height: 75px;
+  resize: vertical;
+}
+
+.send {
+  padding: 12px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--lime);
+  font: 9px var(--mono);
+  cursor: pointer;
+}
+
+.send:hover {
+  filter: brightness(.96);
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  body {
+    padding: 20px;
+  }
+
+  .top {
+    grid-template-columns: 55px 1fr 1px 1fr;
+    gap: 14px;
+  }
+
+  .eyebrow {
+    display: none;
+  }
+
+  .showcase-card {
+    grid-template-columns: 125px minmax(0, 1fr);
+    gap: 10px;
+    min-height: 390px;
+    padding: 13px;
+  }
+
+  .card-heading {
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .site {
+    padding: 9px;
+  }
+
+  .navlinks {
+    gap: 8px;
+  }
+
+  .program img {
+    height: 75px;
+  }
+
+  .program h3 {
+    font-size: 10px;
+  }
+
+  .trainer img {
+    height: 115px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  body {
+    padding: 16px;
+  }
+
+  .top {
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+    margin: 0 0 22px;
+  }
+
+  .top-rule {
+    display: none;
+  }
+
+  .intro {
+    grid-column: 2;
+    max-width: none;
+    font-size: 12px;
+  }
+
+  .edition {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: clamp(35px, 8vw, 58px);
+    white-space: normal;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card {
+    grid-template-columns: 125px minmax(0, 1fr);
+    min-height: 390px;
+    padding: 12px;
+  }
+
+  .browser {
+    min-height: 350px;
+  }
+
+  .program img {
+    height: 80px;
+  }
+
+  .trainer img {
+    height: 120px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .edition {
+    display: none;
+  }
+
+  .intro {
+    grid-column: 1;
+  }
+
+  .showcase-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .card-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-heading {
+    grid-column: 1;
+  }
+
+  .short-line {
+    display: none;
+  }
+
+  .description {
+    grid-column: 1;
+    max-width: none;
+    font-size: 11px;
+  }
+
+  .view {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .browser {
+    min-height: 360px;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+
+  .navlinks {
+    gap: 8px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .hero-copy {
+    width: 82%;
+  }
+
+  .hero-copy h2 {
+    font-size: 32px;
+  }
+
+  .hero-stats {
+    gap: 10px;
+  }
+
+  .program-head {
+    grid-template-columns: 1fr;
+  }
+
+  .program-head p {
+    display: none;
+  }
+
+  .programs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .program img {
+    height: 105px;
+  }
+
+  .program h3 {
+    font-size: 12px;
+  }
+
+  .program p {
+    font-size: 8px;
+  }
+
+  .trainer-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filters {
+    justify-content: flex-start;
+  }
+
+  .trainers {
+    gap: 5px;
+  }
+
+  .trainer img {
+    height: 100px;
+  }
+
+  .trainer-meta strong {
+    font-size: 9px;
+  }
+
+  .trainer-meta span {
+    font-size: 6px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .contact-copy p {
+    margin: 5px 0;
+  }
+
+  .contact-details {
+    margin-top: 7px;
+  }
+
+  .contact-form {
+    gap: 6px;
+  }
+
+  .field {
+    padding: 9px;
+  }
+
+  .field.message {
+    height: 55px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <div class="edition">(02)</div>
+  <h1>FITZONE WEBSITE</h1>
+  <div class="top-rule"></div>
+
+  <div class="intro">
+    A modern fitness website crafted to showcase training,
+    programs and gym culture with bold energy and clean design.
+  </div>
+
+  <div class="eyebrow">// WEBSITE DESIGN SHOWCASE</div>
+</header>
+
+<main class="grid">
+
+  <!-- 01: HERO PAGE -->
+  <section class="showcase-card" id="hero">
+
+    <div class="card-info">
+      <div class="card-heading">
+        <span class="number">01</span>
+        <span>HERO PAGE</span>
+      </div>
+
+      <div class="short-line"></div>
+
+      <p class="description">
+        Bold headlines, minimal navigation and a cinematic hero
+        section with a strong first impression.
+      </p>
+
+      <a class="view" href="#hero-preview">
+        VIEW PAGE
+        <svg width="25" height="18" viewBox="0 0 25 18" fill="none">
+          <path d="M1 9H22M15 2L22 9L15 16"
+            stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="browser" id="hero-preview">
+      <div class="browser-bar">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+      </div>
+
+      <div class="site hero-site">
+        <nav class="site-nav">
+          <strong class="brand">FITZONE</strong>
+
+          <div class="navlinks">
+            <a href="#hero">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#contact">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <a class="join" href="#contact">Join Now →</a>
+        </nav>
+
+        <div class="hero-copy">
+          <div class="kicker">MORE THAN A GYM</div>
+
+          <h2>
+            BUILD<br>
+            STRONGER.<br>
+            <span>BECOME MORE.</span>
+          </h2>
+
+          <p>
+            Modern training. Expert coaches. A supportive community.
+            Everything you need to build a stronger, healthier and better you.
+          </p>
+
+          <a class="cta" href="#programs">START YOUR JOURNEY →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>10+</strong><span>Expert Trainers</span></div>
+          <div><strong>500+</strong><span>Happy Members</span></div>
+          <div><strong>4.9★</strong><span>Member Rating</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02: PROGRAMS PAGE -->
+  <section class="showcase-card" id="programs">
+
+    <div class="card-info">
+      <div class="card-heading">
+        <span class="number">02</span>
+        <span>PROGRAMS PAGE</span>
+      </div>
+
+      <div class="short-line"></div>
+
+      <p class="description">
+        Showcase training programs with clean layout, icons and
+        simple navigation structure.
+      </p>
+
+      <a class="view" href="#program-preview">
+        VIEW PAGE →
+      </a>
+    </div>
+
+    <div class="browser" id="program-preview">
+      <div class="browser-bar">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+      </div>
+
+      <div class="site">
+        <nav class="site-nav">
+          <strong class="brand">FITZONE</strong>
+          <div class="navlinks">
+            <a href="#hero">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#contact">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a class="join" href="#contact">Join Now →</a>
+        </nav>
+
+        <div class="program-head">
+          <div>
+            <div class="kicker lime">OUR PROGRAMS</div>
+            <h2>FIND YOUR<br><span>TRAINING</span></h2>
+          </div>
+
+          <p>
+            Structured programs designed for real results.
+            Choose a plan that fits your goals and start today.
+          </p>
+        </div>
+
+        <div class="programs">
+
+          <article class="program">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&q=80" alt="Strength training">
+            <div class="program-body">
+              <div class="program-icon">♧</div>
+              <h3>STRENGTH<br>TRAINING</h3>
+              <p>Build muscle, increase strength and unlock your potential.</p>
+              <div class="learn">Learn More →</div>
+            </div>
+          </article>
+
+          <article class="program">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80" alt="Personal training">
+            <div class="program-body">
+              <div class="program-icon">♙</div>
+              <h3>PERSONAL<br>TRAINING</h3>
+              <p>One-on-one coaching for faster and safer results.</p>
+              <div class="learn">Learn More →</div>
+            </div>
+          </article>
+
+          <article class="program">
+            <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=400&q=80" alt="HIIT training">
+            <div class="program-body">
+              <div class="program-icon">ϟ</div>
+              <h3>HIIT &<br>CONDITIONING</h3>
+              <p>Boost endurance with high-intensity workouts.</p>
+              <div class="learn">Learn More →</div>
+            </div>
+          </article>
+
+          <article class="program">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80" alt="Mobility and recovery">
+            <div class="program-body">
+              <div class="program-icon">✳</div>
+              <h3>MOBILITY<br>& RECOVERY</h3>
+              <p>Improve flexibility and move better.</p>
+              <div class="learn">Learn More →</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03: TRAINERS PAGE -->
+  <section class="showcase-card" id="trainers">
+
+    <div class="card-info">
+      <div class="card-heading">
+        <span class="number">03</span>
+        <span>TRAINERS PAGE</span>
+      </div>
+
+      <div class="short-line"></div>
+
+      <p class="description">
+        A clean portfolio layout to showcase expert trainers
+        with filters and modern visuals.
+      </p>
+
+      <a class="view" href="#trainer-preview">VIEW PAGE →</a>
+    </div>
+
+    <div class="browser" id="trainer-preview">
+      <div class="browser-bar">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+      </div>
+
+      <div class="site">
+        <nav class="site-nav">
+          <strong class="brand">FITZONE</strong>
+          <div class="navlinks">
+            <a href="#hero">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#contact">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a class="join" href="#contact">Join Now →</a>
+        </nav>
+
+        <div class="trainer-head">
+          <div>
+            <div class="kicker lime">OUR TEAM</div>
+            <h2>MEET YOUR<br><span>COACHES</span></h2>
+          </div>
+
+          <div class="filters">
+            <span class="filter active">All</span>
+            <span class="filter">Strength</span>
+            <span class="filter">Cardio</span>
+            <span class="filter">Nutrition</span>
+          </div>
+        </div>
+
+        <div class="trainers">
+
+          <article class="trainer">
+            <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?auto=format&fit=crop&w=500&q=85" alt="Fitness trainer">
+            <div class="trainer-meta">
+              <strong>ARJUN KAPOOR</strong>
+              <span>Strength & Conditioning</span>
+            </div>
+          </article>
+
+          <article class="trainer">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=85" alt="Personal trainer">
+            <div class="trainer-meta">
+              <strong>KAVYA SHARMA</strong>
+              <span>Personal Training</span>
+            </div>
+          </article>
+
+          <article class="trainer">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=85" alt="Fitness coach">
+            <div class="trainer-meta">
+              <strong>ROHAN MEHTA</strong>
+              <span>HIIT & Functional</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: CONTACT PAGE -->
+  <section class="showcase-card" id="contact">
+
+    <div class="card-info">
+      <div class="card-heading">
+        <span class="number">04</span>
+        <span>CONTACT PAGE</span>
+      </div>
+
+      <div class="short-line"></div>
+
+      <p class="description">
+        Simple contact form with clean typography and minimal
+        design for better focus and usability.
+      </p>
+
+      <a class="view" href="#contact-preview">VIEW PAGE →</a>
+    </div>
+
+    <div class="browser" id="contact-preview">
+      <div class="browser-bar">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+      </div>
+
+      <div class="site">
+        <nav class="site-nav">
+          <strong class="brand">FITZONE</strong>
+          <div class="navlinks">
+            <a href="#hero">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#contact">About</a>
+            <a href="#contact" class="lime">Contact</a>
+          </div>
+          <a class="join" href="#contact">Join Now →</a>
+        </nav>
+
+        <div class="contact-layout">
+
+          <div class="contact-copy">
+            <div class="kicker lime">GET IN TOUCH</div>
+            <h2>LET’S GET<br><span>MOVING</span></h2>
+
+            <p>
+              <span class="lime">Have a question or ready to join?</span><br>
+              Get in touch with our team. We're here to help you
+              on your fitness journey.
+            </p>
+
+            <div class="contact-details">
+              ☎ &nbsp; +91 98765 43210<br>
+              ✉ &nbsp; info@fitzone.in<br>
+              ⌖ &nbsp; Pune, India<br>
+              <span style="padding-left:22px">
+                123 Fitness Street,<br>
+                Kothrud, Pune - 411038
+              </span>
+            </div>
+          </div>
+
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This is a demo form. Connect it to a backend to receive messages.');">
+            <input class="field" type="text" placeholder="Your Name *" required>
+
+            <input class="field" type="email" placeholder="Your Email *" required>
+
+            <select class="field" required>
+              <option value="">Your Goal</option>
+              <option>Build strength</option>
+              <option>Lose weight</option>
+              <option>Improve endurance</option>
+              <option>General fitness</option>
+            </select>
+
+            <textarea class="field message" placeholder="Message *" required></textarea>
+
+            <button class="send" type="submit">SEND MESSAGE →</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital services for growing businesses — web development, mobile apps, UI/UX design, digital marketing and more.">
+  <title>Services — Digital Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="service.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar service-navbar" aria-label="Main navigation">
+    <a href="index.html#home" class="nav-logo">
+      NAUSHAD<sup>®</sup>
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="service-navigation"
+      data-nav-toggle
+    >
+      <span class="nav-toggle-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <div class="nav-links" id="service-navigation">
+      <a href="index.html#home" class="nav-link">HOME</a>
+      <a href="project.html" class="nav-link">PROJECTS</a>
+      <a href="service.html" class="nav-link active" aria-current="page">SERVICES</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </div>
+
+    <a href="contact.html" class="nav-cta">
+      LET'S WORK TOGETHER <span>↗</span>
+    </a>
+  </nav>
+
+  <main class="page">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">(03)</span>
+
+        <h1>SERVICES</h1>
+
+        <p class="hero-description">
+          I provide end-to-end digital solutions to help
+          businesses turn ideas into meaningful
+          and scalable products.
+        </p>
+
+        <a href="#contact" class="primary-button">
+          <span>DISCUSS YOUR PROJECT</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 12h15M13 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- HERO ILLUSTRATION -->
+      <div class="hero-art">
+        <div class="lime-orb"></div>
+        <div class="orbit"></div>
+
+        <div class="art-lines art-lines-left">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="art-note">
+          <span class="asterisk">✳</span>
+          <p>// SERVICES<br>THAT DRIVE RESULT</p>
+        </div>
+
+        <div class="art-card design-card">
+          <svg viewBox="0 0 80 70" class="art-icon" aria-hidden="true">
+            <rect x="9" y="10" width="62" height="48" rx="3"/>
+            <path d="M9 22h62M20 16h3M30 16h3M40 16h3"/>
+            <path d="M29 33h22M29 33v15h22"/>
+          </svg>
+          <span>DESIGN</span>
+        </div>
+
+        <div class="art-card build-card">
+          <span class="build-label">BUILD</span>
+          <svg viewBox="0 0 100 90" class="code-icon" aria-hidden="true">
+            <path d="M34 23L12 45l22 22M66 23l22 22-22 22M56 10L44 80"/>
+          </svg>
+          <span class="scale-label">SCALE</span>
+        </div>
+
+        <div class="art-card grow-card">
+          <svg viewBox="0 0 80 70" class="art-icon bars-icon" aria-hidden="true">
+            <path d="M12 57V42h13v15zM34 57V27h13v30zM56 57V10h13v47z"/>
+          </svg>
+          <span>GROW</span>
+        </div>
+
+        <div class="impact-note">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <path d="M49 53C45 31 30 15 9 11M9 11l17-2M9 11l7 16"/>
+          </svg>
+          <span>IDEAS<br>TO IMPACT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="services-grid" id="services" aria-label="Our services">
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="7" y="8" width="34" height="32" rx="2"/>
+            <path d="M7 16h34M13 12h2M19 12h2M25 12h2"/>
+            <path d="M19 23l-5 5 5 5M29 23l5 5-5 5M27 21l-6 14"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>WEB DEVELOPMENT</h2>
+          <p>Modern, responsive and high-performance websites and web applications tailored to your goals.</p>
+        </div>
+        <span class="service-number">(01)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="12" y="5" width="24" height="38" rx="4"/>
+            <path d="M19 9h10M22 37h4"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>MOBILE APP DEVELOPMENT</h2>
+          <p>Cross-platform mobile applications with seamless performance and great user experiences.</p>
+        </div>
+        <span class="service-number">(02)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="9" r="4"/>
+            <circle cx="9" cy="18" r="3"/>
+            <circle cx="39" cy="18" r="3"/>
+            <circle cx="13" cy="39" r="3"/>
+            <circle cx="35" cy="39" r="3"/>
+            <path d="M21 12l-9 4M27 12l9 4M12 21l-1 12M36 21l1 12M16 37l5-10M32 37l-5-10M20 22l4-4 4 4-4 5z"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>UI/UX DESIGN</h2>
+          <p>User-centered designs that are clean, modern and focused on conversions.</p>
+        </div>
+        <span class="service-number">(03)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M7 20l22-8v26L7 30zM29 19l5-3v18l-5-3M12 32l4 11h7l-5-9M38 18q7 6 0 12"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>DIGITAL MARKETING</h2>
+          <p>Strategic digital marketing to increase visibility, engagement and business growth.</p>
+        </div>
+        <span class="service-number">(04)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 5L43 16 24 27 5 16z"/>
+            <path d="M5 24l19 11 19-11M5 32l19 11 19-11"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>E-COMMERCE SOLUTIONS</h2>
+          <p>Custom e-commerce platforms with secure payments, inventory and scalable architecture.</p>
+        </div>
+        <span class="service-number">(05)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#contact" class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M20 5h8l1.5 5.5 4 1.7 5-2.5 5 7-4.2 4 .5 5-3.8 3.4 2.5 5.2-7 5-4-4.1-5 .5-3.4 3.8-7-5 2.5-5-1.7-4L8 28v-8l5.5-1.5 1.7-4-2.5-5 7-5z" transform="translate(0 1) scale(.94)"/>
+            <circle cx="24" cy="24" r="7"/>
+          </svg>
+        </div>
+        <div class="service-content">
+          <h2>MAINTENANCE &amp; SUPPORT</h2>
+          <p>Ongoing support, updates and performance optimization to keep your product running smoothly.</p>
+        </div>
+        <span class="service-number">(06)</span>
+        <span class="circle-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section">
+      <div class="why-heading">
+        <span class="lime-tag">WHY CHOOSE ME</span>
+        <h2>MORE THAN<br>JUST DEVELOPMENT</h2>
+      </div>
+
+      <div class="benefits">
+        <article class="benefit">
+          <span class="benefit-icon">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M18 3L8 17h7l-1 12 10-16h-7z"/>
+            </svg>
+          </span>
+          <h3>FAST DELIVERY</h3>
+          <p>On-time results,<br>without compromise.</p>
+        </article>
+
+        <article class="benefit">
+          <span class="benefit-icon">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="10" r="5"/>
+              <path d="M6 27v-4a10 10 0 0120 0v4zM5 12a4 4 0 000 8M27 12a4 4 0 010 8"/>
+            </svg>
+          </span>
+          <h3>CLIENT FOCUSED</h3>
+          <p>Your goals<br>come first.</p>
+        </article>
+
+        <article class="benefit">
+          <span class="benefit-icon">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 3L28 10 23 24 16 29 9 24 4 10z"/>
+              <path d="M4 10h24M11 10l5 19 5-19M11 10l5-7 5 7"/>
+            </svg>
+          </span>
+          <h3>QUALITY WORK</h3>
+          <p>Clean, scalable<br>and modern code.</p>
+        </article>
+
+        <article class="benefit">
+          <span class="benefit-icon">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M4 25L13 16l6 5L29 7M20 7h9v9"/>
+            </svg>
+          </span>
+          <h3>LONG-TERM SUPPORT</h3>
+          <p>I'm here even<br>after launch.</p>
+        </article>
+      </div>
+
+      <a href="#contact" class="build-cta">
+        <span class="big-arrow" aria-hidden="true">→</span>
+        <span class="cta-sparks" aria-hidden="true">╱╱</span>
+        <span class="cta-text">LET'S BUILD<br>SOMETHING GREAT</span>
+      </a>
+    </section>
+
+    <!-- CONTACT ANCHOR -->
+    <section class="contact-anchor" id="contact">
+      <span class="eyebrow">(LET'S TALK)</span>
+      <h2>HAVE A PROJECT<br>IN MIND<span>?</span></h2>
+      <p>Let's turn your idea into something meaningful.</p>
+      <a class="primary-button" href="contact.html">
+        <span>START A CONVERSATION</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 12h15M13 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </section>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> DIGITAL STUDIO</span>
+      <a href="#services">BACK TO SERVICES ↑</a>
+    </footer>
+
+  </main>
+</body>
+</html>

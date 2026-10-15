@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Space+Mono&display=swap');
+
+:root {
+  --bg: #fff7ef;
+  --ink: #11110f;
+  --lime: #dff34c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  padding: 35px 3.4%;
+}
+
+header.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 27px;
+  border-bottom: 2px dashed #b4d87b;
+}
+
+.contact-card h1,
+.contact-card h2,
+.contact-card h3,
+.side-card h2,
+.steps h3,
+header.contact-header h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+}
+
+header.contact-header h1 {
+  font-size: clamp(45px, 6vw, 85px);
+}
+
+header.contact-header span:last-child {
+  margin-left: auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+}
+
+.contact-card {
+  background: var(--lime);
+  border: 1.6px solid var(--ink);
+  border-radius: 21px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 30px;
+}
+
+.intro h2 {
+  font-size: clamp(42px, 5vw, 72px);
+  margin: 20px 0;
+}
+
+.intro p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 15px;
+  background: var(--bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 12px;
+  font: 12px "Space Mono", monospace;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #a8df42;
+}
+
+form button {
+  background: var(--ink);
+  color: white;
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  padding: 22px;
+  margin-top: 10px;
+  cursor: pointer;
+  font: 13px "Space Mono", monospace;
+}
+
+form button:hover {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+aside {
+  display: grid;
+  gap: 14px;
+}
+
+.side-card {
+  border: 1.5px solid var(--ink);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.side-card h2 {
+  font-size: 35px;
+  margin: 8px 0 20px;
+}
+
+.map-placeholder {
+  font-size: 130px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tag {
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  padding: 12px 15px;
+  border-radius: 30px;
+  margin: 4px 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tag.active, .tag:hover {
+  background: var(--lime);
+}
+
+.side-card > p:last-child {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px dashed #b4d87b;
+  color: #77766e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 12px;
+  border: 1.5px solid var(--ink);
+  border-radius: 19px;
+  padding: 25px 15px;
+}
+
+.steps > div {
+  padding: 12px;
+  border-right: 2px dashed #b4d87b;
+}
+
+.steps > div:last-child {
+  border-right: none;
+}
+
+.steps h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.steps p {
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps > div:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px 15px;
+  }
+
+  header.contact-header {
+    gap: 12px;
+  }
+
+  header.contact-header span:last-child {
+    display: none;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .steps > div {
+    border-right: none;
+    border-bottom: 2px dashed #b4d87b;
+    padding: 18px 8px;
+  }
+
+  .steps > div:last-child {
+    border-bottom: none;
+  }
+}

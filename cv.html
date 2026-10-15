@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naushad Shaikh | CV</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #e9edf2;
+      color: #252b36;
+      line-height: 1.6;
+      padding: 30px 15px;
+    }
+
+    .cv {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 45px 55px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      border-bottom: 3px solid #17365d;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      font-size: 34px;
+      letter-spacing: 1px;
+      color: #17365d;
+      margin-bottom: 3px;
+    }
+
+    .header h3 {
+      color: #52677f;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      font-size: 13px;
+      color: #555e6b;
+      overflow-wrap: anywhere;
+    }
+
+    .contact a {
+      color: #17365d;
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 23px;
+    }
+
+    section h2 {
+      color: #17365d;
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #d7dee8;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 13.5px;
+      margin-bottom: 7px;
+    }
+
+    .item {
+      margin-bottom: 15px;
+      break-inside: avoid;
+    }
+
+    .item h3 {
+      font-size: 14px;
+      color: #222c3b;
+      margin-bottom: 2px;
+    }
+
+    .meta {
+      font-size: 12.5px;
+      color: #687588;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    li {
+      font-size: 13px;
+      margin-bottom: 4px;
+      padding-left: 2px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 20px;
+    }
+
+    .skill {
+      font-size: 13px;
+    }
+
+    .skill strong {
+      color: #17365d;
+    }
+
+    .declaration {
+      font-size: 12.5px;
+    }
+
+    .signature {
+      margin-top: 14px;
+      font-weight: bold;
+      color: #17365d;
+    }
+
+    .print-btn {
+      display: block;
+      margin: 0 auto 20px;
+      padding: 12px 25px;
+      background: #17365d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .print-btn:hover {
+      background: #254e7e;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .cv {
+        padding: 25px 20px;
+      }
+
+      .header h1 {
+        font-size: 27px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+        color: #222;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .cv {
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .print-btn {
+        display: none;
+      }
+
+      section {
+        margin-bottom: 17px;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="print-btn" onclick="window.print()">
+    Download / Save CV as PDF
+  </button>
+
+  <main class="cv">
+
+    <header class="header">
+      <h1>NAUSHAD SHAIKH</h1>
+      <h3>BCA Student | Aspiring Software Developer</h3>
+      <div class="contact">
+        <a href="mailto:naushadshaikh04626@gmail.com">
+          naushadshaikh04626@gmail.com
+        </a>
+        &nbsp; | &nbsp;
+        <a href="tel:+919764374830">+91 97643 74830</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Career Objective</h2>
+      <p>
+        Motivated BCA student with a strong foundation in Python, Java,
+        HTML, CSS, JavaScript, and Node.js. Seeking an entry-level
+        opportunity to apply technical knowledge, develop practical
+        software solutions, contribute to team projects, and grow as
+        a software developer.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p class="meta">Pursuing</p>
+        <p>Ramkrishna More College</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <strong>Programming:</strong> Python, Java
+        </div>
+        <div class="skill">
+          <strong>Web Technologies:</strong> HTML, CSS, JavaScript
+        </div>
+        <div class="skill">
+          <strong>Backend / Runtime:</strong> Node.js
+        </div>
+        <div class="skill">
+          <strong>Automation & AI:</strong> n8n, Gemini AI
+        </div>
+        <div class="skill">
+          <strong>Data Management:</strong> Google Sheets
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internship Experience</h2>
+      <div class="item">
+        <h3>Production-Level Frontend Development Intern</h3>
+        <p class="meta">CodeAlpha | Virtual Internship</p>
+        <ul>
+          <li>
+            Built a responsive image gallery with lightbox navigation
+            and hover effects.
+          </li>
+          <li>
+            Developed a calculator using HTML, CSS, and JavaScript
+            with keyboard support.
+          </li>
+          <li>
+            Created a music player with audio controls, progress bar,
+            and volume control.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="item">
+        <h3>Library Management System</h3>
+        <ul>
+          <li>
+            Developed a system to manage book records, member details,
+            and book issue and return operations.
+          </li>
+          <li>
+            Implemented core functionality using programming and
+            web development skills.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Travel Booking System</h3>
+        <ul>
+          <li>
+            Built a platform for searching, booking, and managing
+            travel reservations.
+          </li>
+          <li>
+            Designed the frontend interface and implemented
+            booking functionality.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Hotel Booking Management System</h3>
+        <ul>
+          <li>
+            Developed a hotel reservation system with room
+            availability tracking.
+          </li>
+          <li>
+            Implemented booking management using frontend and
+            backend development concepts.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Freelance Experience</h2>
+      <div class="item">
+        <h3>AI Appointment Booking Agent — Dental Clinic</h3>
+        <ul>
+          <li>
+            Built an AI-powered appointment booking agent integrating
+            WhatsApp, Gemini AI, and Google Sheets.
+          </li>
+          <li>
+            Automated appointment workflows using n8n.
+          </li>
+          <li>
+            Used Google Sheets to store and manage appointment data.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+
+      <div class="item">
+        <h3>Advanced Software Engineering Job Simulation</h3>
+        <p class="meta">Walmart Global Tech — Forage | July 2026</p>
+        <p>
+          Practical tasks in advanced data structures, software
+          architecture, relational database design, and data munging.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Technology Software Development Job Simulation</h3>
+        <p class="meta">Citi — Forage | July 2026</p>
+        <p>
+          Practical tasks in state diagrams, feature proposals,
+          web data queries, and live data visualization.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>AI in Action Job Simulation</h3>
+        <p class="meta">Vista — Forage | July 2026</p>
+        <p>
+          Practical tasks in prompt engineering, contextual engineering,
+          and professional workflow automation.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Declaration</h2>
+      <p class="declaration">
+        I hereby declare that the information provided above is true
+        and accurate to the best of my knowledge.
+      </p>
+      <p class="signature">Naushad Shaikh</p>
+    </section>
+
+  </main>
+
+</body>
+</html>

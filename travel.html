@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly | Travel Website Showcase</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+<main class="showcase">
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <span class="index-mark">[03]</span>
+    <h1>TRAVEL WEBSITE</h1>
+
+    <p class="intro">
+      A modern travel website crafted to showcase destinations,
+      tours and unforgettable travel experiences.
+    </p>
+
+    <p class="eyebrow">// WEBSITE DESIGN SHOWCASE</p>
+  </header>
+
+  <section class="showcase-grid">
+
+    <!-- 01 HERO PAGE -->
+    <article class="showcase-card">
+      <div class="card-copy">
+        <div class="card-heading">
+          <span class="number">01</span>
+          <span>HERO PAGE</span>
+        </div>
+
+        <span class="short-line"></span>
+
+        <p>
+          Bold headlines, breathtaking visuals and a clean hero
+          section with a strong first impression.
+        </p>
+
+        <a class="view-link" href="#hero-preview">
+          VIEW PAGE <span>⟶</span>
+        </a>
+      </div>
+
+      <div class="browser" id="hero-preview">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+
+        <div class="hero-site site-screen">
+          <nav class="site-nav light-nav">
+            <a class="brand" href="#hero-preview">Wanderly</a>
+
+            <div class="nav-links">
+              <a href="#hero-preview">Home</a>
+              <a href="#destinations-preview">Destinations</a>
+              <a href="#tours-preview">Tours</a>
+              <a href="#about">About</a>
+              <a href="#contact-preview">Contact</a>
+            </div>
+
+            <a class="pill-button" href="#contact-preview">
+              Plan a Trip →
+            </a>
+          </nav>
+
+          <div class="hero-content">
+            <span class="gold-label">EXPLORE THE WORLD</span>
+
+            <h2>
+              Travel<br>
+              Beyond<br>
+              <em>Boundaries</em>
+            </h2>
+
+            <p>
+              Discover breathtaking destinations, unique experiences
+              and unforgettable journeys with Wanderly.
+            </p>
+
+            <a class="cta-button" href="#destinations-preview">
+              Explore Destinations →
+            </a>
+          </div>
+
+          <span class="slide-count">01 <span>—</span> 03</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 DESTINATIONS PAGE -->
+    <article class="showcase-card">
+      <div class="card-copy">
+        <div class="card-heading">
+          <span class="number">02</span>
+          <span>DESTINATIONS PAGE</span>
+        </div>
+
+        <span class="short-line"></span>
+
+        <p>
+          Popular destinations with beautiful photography,
+          clear layouts and easy category filters.
+        </p>
+
+        <a class="view-link" href="#destinations-preview">
+          VIEW PAGE <span>⟶</span>
+        </a>
+      </div>
+
+      <div class="browser" id="destinations-preview">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+
+        <div class="light-site site-screen">
+          <nav class="site-nav">
+            <a class="brand" href="#hero-preview">Wanderly</a>
+
+            <div class="nav-links">
+              <a href="#hero-preview">Home</a>
+              <a class="active" href="#destinations-preview">Destinations</a>
+              <a href="#tours-preview">Tours</a>
+              <a href="#about">About</a>
+              <a href="#contact-preview">Contact</a>
+            </div>
+
+            <a class="pill-button" href="#contact-preview">
+              Plan a Trip →
+            </a>
+          </nav>
+
+          <div class="section-title">
+            <div>
+              <span class="gold-label">EXPLORE PLACES</span>
+              <h2>Popular<br>Destinations</h2>
+            </div>
+
+            <p>
+              From serene beaches to snow-capped mountains,
+              discover the world's most beautiful places.
+            </p>
+          </div>
+
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="mountains">Mountains</button>
+            <button class="filter" data-filter="beaches">Beaches</button>
+            <button class="filter" data-filter="cities">Cities</button>
+            <button class="filter" data-filter="adventure">Adventure</button>
+            <button class="filter" data-filter="cultural">Cultural</button>
+          </div>
+
+          <div class="destination-grid">
+
+            <article class="destination" data-category="beaches">
+              <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80"
+                alt="Bali tropical landscape"
+                loading="lazy"
+              >
+              <div>
+                <h3>Bali</h3>
+                <span>Indonesia</span>
+                <a href="#contact-preview" aria-label="Explore Bali">↗</a>
+              </div>
+            </article>
+
+            <article class="destination" data-category="mountains adventure">
+              <img
+                src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=600&q=80"
+                alt="Mountain landscape"
+                loading="lazy"
+              >
+              <div>
+                <h3>Switzerland</h3>
+                <span>Europe</span>
+                <a href="#contact-preview" aria-label="Explore Switzerland">↗</a>
+              </div>
+            </article>
+
+            <article class="destination" data-category="cities cultural">
+              <img
+                src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80"
+                alt="Colorful Mediterranean coastal village"
+                loading="lazy"
+              >
+              <div>
+                <h3>Santorini</h3>
+                <span>Greece</span>
+                <a href="#contact-preview" aria-label="Explore Santorini">↗</a>
+              </div>
+            </article>
+
+            <article class="destination" data-category="beaches cultural">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80"
+                alt="Kerala tropical landscape"
+                loading="lazy"
+              >
+              <div>
+                <h3>Kerala</h3>
+                <span>India</span>
+                <a href="#contact-preview" aria-label="Explore Kerala">↗</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 TOURS PAGE -->
+    <article class="showcase-card">
+      <div class="card-copy">
+        <div class="card-heading">
+          <span class="number">03</span>
+          <span>TOURS PAGE</span>
+        </div>
+
+        <span class="short-line"></span>
+
+        <p>
+          Travel packages with attractive images, trip durations,
+          pricing and a simple card layout.
+        </p>
+
+        <a class="view-link" href="#tours-preview">
+          VIEW PAGE <span>⟶</span>
+        </a>
+      </div>
+
+      <div class="browser" id="tours-preview">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+
+        <div class="light-site site-screen">
+          <nav class="site-nav">
+            <a class="brand" href="#hero-preview">Wanderly</a>
+
+            <div class="nav-links">
+              <a href="#hero-preview">Home</a>
+              <a href="#destinations-preview">Destinations</a>
+              <a class="active" href="#tours-preview">Tours</a>
+              <a href="#about">About</a>
+              <a href="#contact-preview">Contact</a>
+            </div>
+
+            <a class="pill-button" href="#contact-preview">
+              Plan a Trip →
+            </a>
+          </nav>
+
+          <div class="section-title tour-title">
+            <div>
+              <span class="gold-label">OUR TOURS</span>
+              <h2>Handpicked<br>Travel Experiences</h2>
+            </div>
+
+            <p>
+              Curated tours for every kind of traveler.
+              Choose your next adventure.
+            </p>
+          </div>
+
+          <div class="tour-grid">
+
+            <article class="tour">
+              <div class="tour-image">
+                <img
+                  src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=600&q=80"
+                  alt="Tropical island getaway"
+                  loading="lazy"
+                >
+                <span>4 Days</span>
+              </div>
+
+              <div class="tour-info">
+                <h3>Maldives Getaway</h3>
+                <p>Beaches · Relaxation</p>
+                <strong>₹ 45,000 <small>/ person</small></strong>
+              </div>
+            </article>
+
+            <article class="tour">
+              <div class="tour-image">
+                <img
+                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+                  alt="Mountain adventure"
+                  loading="lazy"
+                >
+                <span>6 Days</span>
+              </div>
+
+              <div class="tour-info">
+                <h3>Himachal Adventure</h3>
+                <p>Mountains · Adventure</p>
+                <strong>₹ 28,000 <small>/ person</small></strong>
+              </div>
+            </article>
+
+            <article class="tour">
+              <div class="tour-image">
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80"
+                  alt="Scenic nature destination"
+                  loading="lazy"
+                >
+                <span>5 Days</span>
+              </div>
+
+              <div class="tour-info">
+                <h3>Bali Explorer</h3>
+                <p>Culture · Nature</p>
+                <strong>₹ 38,000 <small>/ person</small></strong>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 CONTACT PAGE -->
+    <article class="showcase-card">
+      <div class="card-copy">
+        <div class="card-heading">
+          <span class="number">04</span>
+          <span>CONTACT PAGE</span>
+        </div>
+
+        <span class="short-line"></span>
+
+        <p>
+          A simple enquiry form with elegant typography,
+          a scenic background and contact information.
+        </p>
+
+        <a class="view-link" href="#contact-preview">
+          VIEW PAGE <span>⟶</span>
+        </a>
+      </div>
+
+      <div class="browser" id="contact-preview">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+
+        <div class="contact-site site-screen">
+          <nav class="site-nav light-nav">
+            <a class="brand" href="#hero-preview">Wanderly</a>
+
+            <div class="nav-links">
+              <a href="#hero-preview">Home</a>
+              <a href="#destinations-preview">Destinations</a>
+              <a href="#tours-preview">Tours</a>
+              <a href="#about">About</a>
+              <a href="#contact-preview">Contact</a>
+            </div>
+
+            <a class="pill-button" href="#contact-form">Plan a Trip →</a>
+          </nav>
+
+          <div class="contact-content">
+            <div class="contact-copy">
+              <span class="gold-label">LET'S TALK</span>
+              <h2>Plan Your<br>Next <em>Journey</em></h2>
+
+              <p>
+                Have a question or need help planning your trip?
+                We're here to help.
+              </p>
+
+              <div class="contact-detail">✉ hello@wanderly.com</div>
+              <div class="contact-detail">☎ +91 98765 43210</div>
+              <div class="contact-detail">⌖ Pune, India</div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name *"
+                aria-label="Your name"
+                required
+              >
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email *"
+                aria-label="Your email"
+                required
+              >
+
+              <select name="destination" aria-label="Travel destination">
+                <option value="">Choose Destination</option>
+                <option>Bali</option>
+                <option>Switzerland</option>
+                <option>Santorini</option>
+                <option>Kerala</option>
+              </select>
+
+              <textarea
+                name="message"
+                placeholder="Your Message *"
+                aria-label="Your message"
+                required
+              ></textarea>
+
+              <button class="send-button" type="submit">
+                Send Message →
+              </button>
+
+              <p class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="about">
+    <span>WANDERLY / TRAVEL DESIGN</span>
+    <span>DESIGNED FOR THE CURIOUS.</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

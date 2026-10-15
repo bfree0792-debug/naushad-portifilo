@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav class="navbar project-navbar" aria-label="Main navigation">
+    <a href="index.html#home" class="nav-logo">
+      NAUSHAD<sup>®</sup>
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="project-navigation"
+      data-project-nav-toggle
+    >
+      <span class="nav-toggle-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <div class="nav-links" id="project-navigation">
+      <a href="index.html#home" class="nav-link">HOME</a>
+      <a href="project.html" class="nav-link active" aria-current="page">PROJECTS</a>
+      <a href="service.html" class="nav-link">SERVICES</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </div>
+
+    <a href="contact.html" class="nav-cta">
+      LET'S WORK TOGETHER <span>↗</span>
+    </a>
+  </nav>
+
+  <script>
+    (function () {
+      const navToggle = document.querySelector("[data-project-nav-toggle]");
+      const projectNavigation = document.getElementById("project-navigation");
+
+      if (!navToggle || !projectNavigation) return;
+
+      const navbar = navToggle.closest(".project-navbar");
+
+      function setNavigationOpen(isOpen) {
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+        navToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+        navbar.classList.toggle("is-open", isOpen);
+      }
+
+      navToggle.addEventListener("click", function () {
+        setNavigationOpen(navToggle.getAttribute("aria-expanded") !== "true");
+      });
+
+      projectNavigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          setNavigationOpen(false);
+        });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "Escape" &&
+          navToggle.getAttribute("aria-expanded") === "true"
+        ) {
+          setNavigationOpen(false);
+          navToggle.focus();
+        }
+      });
+
+      window.matchMedia("(max-width: 760px)").addEventListener("change", function (event) {
+        if (!event.matches) setNavigationOpen(false);
+      });
+    })();
+  </script>
+
+<main class="page-shell">
+
+  <section id="projects">
+    <header class="section-heading projects-heading">
+      <span class="section-number">(01)</span>
+      <h1>Projects</h1>
+      <p class="section-description">A collection of projects I’ve built, from web applications to useful tools. Each one solves a real problem and delivers real results.</p>
+      <span class="heading-note">// REAL IDEAS. REAL IMPACT</span>
+    </header>
+
+    <div class="project-grid">
+      <article class="project-card project-signal">
+        <div class="project-copy">
+          <p class="project-date">#01 - 2025</p>
+          <h2>Portfolio</h2>
+          <p>Portfolio for sale marketing, built with React and Node.js, with a modern UI and Playwright testing.</p>
+          <div class="tags"><span>FRONT</span><span>BACK</span><span>TESTS</span></div>
+        </div>
+        <div class="project-image">
+          <img src="la.png" alt="Portfolio project preview">
+        </div>
+      </article>
+
+      <article class="project-card project-gulf">
+        <div class="project-copy">
+          <p class="project-date">#02 - 2024</p>
+          <h2>Prompt</h2>
+          <p>PromptJump is a website dedicated to all types of prompts, built with React and Node.js, using Supabase for its database and load testing with k6.</p>
+          <div class="tags"><span>BACK</span><span>LOAD TESTS</span></div>
+        </div>
+        <div class="project-image">
+          <img src="pj.png" alt="PromptJump project preview">
+        </div>
+      </article>
+
+      <article class="project-card project-veg">
+        <div class="project-copy">
+          <p class="project-date">#03 - 2024</p>
+          <h2>Customer Software System</h2>
+          <p>Customer details management system built with React, Node.js and PostgreSQL.</p>
+          <div class="tags"><span>FRONT</span><span>BACK</span><span>E2E</span></div>
+        </div>
+        <div class="project-image">
+          <img src="dr.png" alt="Customer software system preview">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="dashed-divider"></div>
+
+  <section id="web-design">
+    <header class="section-heading showcase-heading">
+      <span class="section-number">(02)</span>
+      <h2>Coming soon Projects</h2>
+      <p class="section-description">A collection of website designs, brand experiences and UI concepts created for different businesses and ideas.</p>
+    </header>
+
+    <div class="showcase-grid">
+
+      <article class="showcase-card">
+        <a href="AG.HTML" class="browser-window">
+          <div class="browser-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="website-image">
+            <img src="AGG.png" alt="Latif agency website">
+          </div>
+        </a>
+        <div class="showcase-caption">
+          <div><h3>01 / Agency Website</h3><p>Branding · Web Design</p></div>
+          <a href="AG.HTML" class="round-arrow" aria-label="View Latif website">↗</a>
+        </div>
+      </article>
+
+      <article class="showcase-card">
+        <a href="FITNESS.HTML" class="browser-window">
+          <div class="browser-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="website-image">
+            <img src="FI.png" alt="Fitness website preview">
+          </div>
+        </a>
+        <div class="showcase-caption">
+          <div><h3>02 / Fitness Website</h3><p>Visual Design · UI/UX container</p></div>
+          <a href="FITNESS.HTML" class="round-arrow" aria-label="View fitness website">↗</a>
+        </div>
+      </article>
+
+      <article class="showcase-card">
+        <a href="FA.HTML" class="browser-window">
+          <div class="browser-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="website-image">
+            <img src="FA.png" alt="MasterFood e-commerce website">
+          </div>
+        </a>
+        <div class="showcase-caption">
+          <div><h3>03 / E-commerce Website</h3><p>Visual Design · Web Design</p></div>
+          <a href="FA.HTML" class="round-arrow" aria-label="View MasterFood website">↗</a>
+        </div>
+      </article>
+
+      <article class="showcase-card">
+        <a href="TRAVEL.HTML" class="browser-window">
+          <div class="browser-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="website-image">
+            <img src="TA.png" alt="TravelGo travel website">
+          </div>
+        </a>
+        <div class="showcase-caption">
+          <div><h3>04 / Travel Website</h3><p>Visual Design · UI/UX</p></div>
+          <a href="TRAVEL.HTML" class="round-arrow" aria-label="View TravelGo website">↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="contact-banner" id="contact">
+    <span class="section-number">(03)</span>
+    <h2>Have a project in mind?</h2>
+    <div class="contact-copy">
+      <p>Let’s build something amazing together.<br>I’m always open to new ideas and opportunities.</p>
+    </div>
+    <a class="contact-button" href="contact.html">  
+      <span>⟶</span> Get in touch
+    </a>
+  </section>
+
+  <footer>
+    <span>© <span id="year"></span> Portfolio</span>
+    <a href="#projects">Back to top ↑</a>
+  </footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
